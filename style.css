@@ -1,0 +1,30 @@
+/* part 01 : header section */
+#for_nav a {
+    text-decoration: none;
+    color: #6c6c6c;
+    font-weight: 500;
+    font-size: 14;
+    margin: 20px;
+}    
+
+#for_header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 150px;
+}
+
+#for_nav a.for_color {
+    color: black;
+}
+
+.for_p_tag_color{
+    color: #6c6c6c;
+}
+
+
+/* This is used for tailwind css auto suggestions */
+@import "tailwindcss"
