@@ -15,28 +15,35 @@
 
 <body>
     <!-- Part 01 : Header section -->
-    <header id="for_header">
-        <div>
-            <img src="B12A02-Responsive-Flowers/assets/logo.png" alt="">
+    <header  class="flex items-center justify-between px-6 py-4 bg-white">
+        <div class="">
+            <img src="B12A02-Responsive-Flowers/assets/logo.png" alt="" class="h-10">
         </div>
-        <div>
-            <nav id="for_nav">
-                <a href="" class="for_color">Home</a>
-                <a href="">Shop</a>
-                <a href="">About</a>
-                <a href="" class="for_color"> <i class="fa-solid fa-cart-shopping"></i> cart ($56)</a>
-            </nav>
-        </div>
+        <nav class="hidden sm:flex gap-6 text-gray-800 text-base items-center">
+    <a href="" class="hover:text-orange-500 text-black">Home</a>
+    <a href="" class="hover:text-orange-500">Shop</a>
+    <a href="" class="hover:text-orange-500">About</a>
+    <!-- For large screens -->
+    <a href="" class="hover:text-orange-500">
+      <i class="fa-solid fa-cart-shopping text-black"></i> cart ($56)
+    </a>
+  </nav>
+
+  <div class="flex-shrink-0 sm:hidden">
+    <a href="" class="text-gray-800 hover:text-orange-500">
+      <i class="fa-solid fa-cart-shopping"></i> cart ($56)
+    </a>
+  </div>
     </header>
 
     <main>
         <!-- Part 02 : Always fresh flowers section -->
-        <section class="flex ml-30 mr-30 bg-white bg-fixed place-content-center pt-10">
-            <div class=" px-14 py-20">
-                <h1 class="text-5xl font-bold"><span class=" ">ALWAYS </span><span class="text-orange-500">FRESH</span>
+        <section class="flex flex-col-reverse sm:flex-row items-center justify-center px-4 sm:px-20 py-10 bg-white">
+            <div class="text-center sm:text-left px-4 sm:px-14 py-6 sm:py-20">
+                <h1 class="text-4xl sm:text-5xl font-bold"><span class=" ">ALWAYS </span><span class="text-orange-500">FRESH</span>
                 </h1> <br>
-                <h1 class="text-5xl font-bold"><span class="text-orange-500">FLOWERS</span></h1> <br> <br>
-                <P class="for_p_tag_color"> Indulge your senses with the beauty and fragrance of our fresh flower shop.
+                <h1 class="text-4xl sm:text-5xl font-bold mt-2"><span class="text-orange-500">FLOWERS</span></h1> <br> <br>
+                <P class="text-gray-700 mt-6"> Indulge your senses with the beauty and fragrance of our fresh flower shop.
                     From classic roses to exotic blooms, we offer a wide variety of gresh flowers that are perfect for
                     any occasion.</P>
             </div>
@@ -45,10 +52,10 @@
 
         <!-- Part 03 : Plants section -->
         <section class="mt-20 mb-40 px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-15">
+            <div class="mb-15 text-center sm:text-center px-4 sm:px-14 py-6 sm:py-20">
                 <h1 class="text-3xl font-bold"><span class="text-orange-500">Our</span> <span
                         class="text-black">Plants</span> <br> <br> </h1>
-                <p class="for_p_tag_color px-50">Indulge your senses with the beauty and fragrance of our fresh flower
+                <p class="mt-6 text-gray-700 for_p_tag_color">Indulge your senses with the beauty and fragrance of our fresh flower
                     shop. From <br>classic roses to exotic blooms, we offer a wide variety of fresh.</p>
             </div>
 
@@ -211,17 +218,6 @@
         </section>
 
         <!-- Part 06 : Join the colorful Bunch section -->
-        <!-- <section class="relative bg-cover bg-center h-[400px]"
-            style="background-image: url('B12A02-Responsive-Flowers/assets/news-letter-bg.png')">
-
-            <div
-                class="absolute inset-0 bg-opacity-75 flex flex-col justify-center items-center text-white text-center px-4">
-                <h2 class="text-4xl font-bold mb-6">Join the colorful Bunch</h2>
-                <label for="email">
-                    <input type="text" id="email" placeholder="Enter your email">
-                </label>
-                <button>dsfd</button>
-        </section> -->
 
         <section>
             <div class="relative h-[400px]">
